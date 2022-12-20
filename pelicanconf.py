@@ -16,9 +16,9 @@ PLUGINS = [ 'neighbors']
 STATIC_PATHS = ['images']
 
 # Article summary length on main index page
-SUMMARY_MAX_LENGTH = 200
+SUMMARY_MAX_LENGTH = 150
 DEFAULT_PAGINATION = 10
-GITHUB_URL = 'https://github.com/'
+GITHUB_URL = 'https://alkistang.github.io/'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
