@@ -1,12 +1,24 @@
+from __future__ import unicode_literals
+
 AUTHOR = 'Crypt-BC-Lab'
-SITENAME = 'Crypto-Seminars'
+SITENAME = 'Sydney Crypto Seminar Series'
+SITESUBTITLE = 'Feature Most Exciting Progress in Cryptography & Blockchain'
 SITEURL = ''
 
 PATH = 'content'
-
 TIMEZONE = 'Australia/Sydney'
-
 DEFAULT_LANG = 'en'
+
+# Theme config
+THEME = 'themes/Peli-Kiera'
+PLUGIN_PATHS = ['pelican-plugins']
+PLUGINS = [ 'neighbors']
+STATIC_PATHS = ['images']
+
+# Article summary length on main index page
+SUMMARY_MAX_LENGTH = 200
+DEFAULT_PAGINATION = 10
+GITHUB_URL = 'https://github.com/'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -22,8 +34,11 @@ LINKS = (('Pelican', 'https://getpelican.com/'),
          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (
+    ('twitter', 'https://twitter.com/'),
+    ('github', 'https://github.com/'),
+    ('facebook', 'https://facebook.com'),
+)
 
 DEFAULT_PAGINATION = False
 
